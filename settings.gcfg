@@ -1,8 +1,13 @@
 [Settings]
 ; Address for reaching the web server. 
 ; eg "http://127.0.0.1:8080/api/"
-Address = http://10.21.5.116:8080/api/
+Address = http://127.0.0.1:9090/api/
 
 ; where the hashcat executable is located
-Location = /home/isusec/oclHashcat-1.30/oclHashcat32.bin
+Location = /path/to/hashcat/ 
 
+; The size of tasks you want to grab from the server, 
+; Lower is better if your worried about machines losing data.
+; Higher is more efficent.
+; You generally want it so that it takes 5-10 minutes to complete a task.
+Rate = 500
